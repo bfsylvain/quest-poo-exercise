@@ -23,12 +23,11 @@ public class Wilder {
     }
 
     public String whoAmI() {
-        String myNameIsVF = "Je m'appelle " + this.getFirstname();
+        
+        String MyNameIsVF = "My name is "+ this.getName();
+        String IamAwareVF = " et " +(this.isAware()? "je suis" : "je ne suis pas")+ " aware";
+        
+        return MyNameIsVF + IamAwareVF;
 
-        if(aware) {
-            return myNameIsVF + " et je suis aware";
-        } else {
-            return myNameIsVF + " et je ne suis pas aware";
-        }
     }
 }
